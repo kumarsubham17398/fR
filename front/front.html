@@ -1,0 +1,72 @@
+<Doctype html>
+    <html>
+    <head>
+        
+        <style>
+    @import url('https://fonts.googleapis.com/css?family=Charm&display=swap'); h1 {
+    h1{
+    text-align: center;
+    font-family: 'lato', cursive;
+    }
+    body{
+        background-color: rgb(166, 169, 172);
+    }
+    h4{
+        text-align: center;
+        font-family: 'Charm', cursive;
+    }
+    div{
+    margin: auto;
+    width: 50%;
+    border: 3px solid Irgb(173, 218, 173);
+    padding: 10px;
+    text-align: center;
+    background-color:burlywood;
+    font-family: 'Charm', cursive;
+    }
+    div{
+    }
+    </style>
+    </head>
+    <body>
+    <section>
+    <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+    <div class="centerDiv">
+    <div class="details">
+    <label><h4>ENTER YOUR NAME</h4></label><br>
+    <input type="text" name="" id="nameid">
+    </div>
+    <div class="imgdiv">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" width="200" height="200" class="imgchange">
+    </div>
+    <button> Click Me</button>
+    </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('button').click(function(){
+    const name = $('#nameid').val();
+    alert(name);
+    $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+    const b = $('.imgchange');
+    console.log(b);
+    });
+    });
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/aj ax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+    $('button').click(function(){
+    const name = $('#nameid').val();
+    alert(name);
+    $('.imgchange').attr('src', 'https://joeschmoe.io/api/v1/
+    ${name}');
+    const b = $('.imgchange'); console.log(b);
+    });
+    });
+    </script>
+    </body>
+    </html>
